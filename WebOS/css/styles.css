@@ -1,3 +1,7 @@
+:root {
+  --wallpaper: url(../images/BjVanU.jpg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@
   transform: translateY(-5%);
   width: 100%;
   height: 100vh;
-  background-image: url(../images/1024020.jpg);
+  background-image: var(--wallpaper);
   background-size: cover;
 }
 .taskbar {
