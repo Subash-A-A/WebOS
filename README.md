@@ -1,1 +1,1 @@
-# WebOS
+Simple web OS
