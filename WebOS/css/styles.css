@@ -1,5 +1,5 @@
 :root {
-  --wallpaper: url(../images/BjVanU.jpg);
+  --wallpaper: url(../images/1024020.jpg);
 }
 
 * {
@@ -8,6 +8,9 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+}
+body {
+  overflow-y: hidden;
 }
 .wallpaper {
   transform: translateY(-5%);
@@ -27,7 +30,7 @@
   height: 6vh;
   background: black;
   display: flex;
-  z-index: 99;
+  z-index: 9;
 }
 .start {
   margin: 0 1%;
@@ -63,7 +66,42 @@
   width: 3vh;
   height: 3vh;
 }
-
+.navigations {
+  display: flex;
+  justify-content: flex-end;
+}
+.close {
+  background-image: url(../svg/close_white_24dp.svg);
+  background-repeat: no-repeat;
+}
+.btns {
+  width: 30px;
+  height: 30px;
+  margin: 0.5%;
+}
+#start__popup {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  z-index: 8;
+}
+#my__computer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 70vh;
+  background: black;
+  z-index: 7;
+}
+.popups {
+  transition: 0.3s;
+  opacity: 0;
+}
 .icons {
   display: flex;
 }
@@ -72,10 +110,10 @@ li {
 }
 
 /* hover */
-.start:hover {
-  cursor: pointer;
-}
-li:hover {
+.start:hover,
+li:hover,
+.btns:hover,
+.search__icon:hover {
   cursor: pointer;
 }
 .search__icon:hover {

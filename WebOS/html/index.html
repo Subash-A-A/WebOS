@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hey, There!</title>
+    <title>WebOS</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <div class="wallpaper"></div>
+    <div id="start__popup" class="popups">
+      <div class="navigations">
+        <div class="close btns" onclick="popoff()"></div>
+      </div>
+    </div>
+    <div id="my__computer" class="popups">
+      <div class="navigations">
+        <div class="close btns" onclick="popoff__myComp()"></div>
+      </div>
+    </div>
     <div class="taskbar">
-      <div class="start">
+      <div id="click1" class="start" onclick="display()">
         <img class="windiws" src="../images/pixel(kritafiles).png" alt="" />
       </div>
+
       <div class="search__container">
         <img class="search__icon" src="../svg/search_black_24dp.svg" alt="" />
         <input
@@ -23,7 +34,7 @@
       </div>
       <div class="icons__container">
         <ul class="icons">
-          <li class="my__comp">
+          <li class="my__comp" onclick="display__myComp()">
             <img src="../svg/desktop_windows_white_24dp.svg" alt="" />
           </li>
           <li class="pets">
